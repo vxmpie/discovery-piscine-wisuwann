@@ -1,0 +1,23 @@
+html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+
+.parallax {
+  position: relative;
+  min-height: 100vh;
+  display: grid; place-items: center;
+  color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.6);
+  background-size: cover; background-position: center; background-attachment: fixed;
+}
+.bg1 { background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600"); }
+.bg2 { background-image: url("https://images.unsplash.com/photo-1503264116251-35a269479413?w=1600"); }
+
+.center {
+  font-weight: 700;
+  font-size: clamp(1.25rem, 4vw, 2.25rem);
+  padding: .8rem 1.2rem; background: rgba(0,0,0,.35); border-radius: 12px; backdrop-filter: blur(2px);
+}
+.block {
+  min-height: 50vh; background: #000; display: grid; place-items: center; color: #fff;
+}
+.block .text { font-size: clamp(1rem, 3vw, 1.5rem); opacity: .9; }
+
+@media (max-width: 767px) { .parallax { background-attachment: scroll; } }
