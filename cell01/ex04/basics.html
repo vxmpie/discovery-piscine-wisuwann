@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Basics</title>
+    <style>
+      :root { --pink: pink; }
+      html, body { height: 100%; margin: 0; }
+      body {
+        background: var(--pink);               
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, monospace;
+        display: flex; flex-direction: column;
+        min-height: 100dvh;
+      }
+      h1 {
+        color: white;                          
+        text-align: center;                    
+        font-size: 2.25rem;                   
+        margin: 32px 16px;
+      }
+      .shops {
+        display: flex; gap: 16px;            
+        justify-content: center; flex-wrap: wrap;
+        padding: 0 16px;
+      }
+      .shop {
+        text-align: center;
+      }
+      .shop img {
+        width: 280px; height: 180px; object-fit: cover; border-radius: 8px;
+        display: block;
+      }
+      hr {
+        border: none; border-top: 2px solid #fff; margin: 24px 0;
+        width: 100%;                           
+      }
+      footer {
+        margin-top: auto;                      
+        padding: 8px 16px 16px;
+        font-style: italic;                   
+        font-family: ui-monospace, "Courier New", monospace; 
+        text-align: right;                    
+        color: #fff;
+      }
+      a { color: #0033cc; }
+      a:visited { color: #551a8b; }
+    </style>
+  </head>
+  <body>
+    <h1>Piscine Basics ✨</h1>
+
+    <section class="shops">
+      <div class="shop">
+        <img src="https://placehold.co/560x360?text=Amazon" alt="Amazon">
+        <div><a href="https://www.amazon.com" target="_blank" rel="noopener">amazon.com</a></div>
+      </div>
+      <div class="shop">
+        <img src="https://placehold.co/560x360?text=eBay" alt="eBay">
+        <div><a href="https://www.ebay.com" target="_blank" rel="noopener">ebay.com</a></div>
+      </div>
+    </section>
+
+    <hr>
+
+    <footer>&copy; yourlogin 2025</footer>
+  </body>
+</html>
