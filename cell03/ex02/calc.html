@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's over 9000 Calculator</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; }
+        input, select, button { margin: 5px; padding: 10px; font-size: 16px; }
+        button { cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="left-operand">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right-operand">
+        <button id="submit-btn">Try me!</button>
+    </div>
+
+    <script>
+
+        setInterval(function() {
+            alert("Please, use me...");
+        }, 30000); 
+
+        const submitButton = document.getElementById('submit-btn');
+        submitButton.addEventListener('click', function() {
+            const leftValue = document.getElementById('left-operand').value;
+            const rightValue = document.getElementById('right-operand').value;
+            const operator = document.getElementById('operator').value;
+
+            const leftNum = parseInt(leftValue);
+            const rightNum = parseInt(rightValue);
+
+            if (isNaN(leftNum) || isNaN(rightNum) || leftNum < 0 || rightNum < 0) {
+                alert("Error :(");
+                return; 
+            }
+            
+            if ((operator === '/' || operator === '%') && rightNum === 0) {
+                alert("It’s over 9000!");
+                console.log("It’s over 9000!");
+                return; 
+            }
+
+            let result;
+            switch (operator) {
+                case '+':
+                    result = leftNum + rightNum;
+                    break;
+                case '-':
+                    result = leftNum - rightNum;
+                    break;
+                case '*':
+                    result = leftNum * rightNum;
+                    break;
+                case '/':
+                    result = leftNum / rightNum;
+                    break;
+                case '%':
+                    result = leftNum % rightNum;
+                    break;
+            }
+
+            alert(result);
+            console.log(result);
+        });
+    </script>
+</body>
+</html>

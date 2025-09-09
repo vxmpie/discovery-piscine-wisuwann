@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's over 9000 Calculator</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; }
+        input, select, button { margin: 5px; padding: 10px; font-size: 16px; }
+        button { cursor: pointer; }
+    </style>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div>
+        <input type="text" id="left-operand">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="text" id="right-operand">
+        <button id="submit-btn">Try me!</button>
+    </div>
+
+    <script>
+        // แจ้งเตือนทุก 30 วินาที
+        setInterval(function () {
+            alert("Please, use me...");
+        }, 30000);
+
+        // ใช้ jQuery ให้ตรงสเปก ex04 (jQuery only)
+        $(function () {
+            const isPosInt = v => /^\d+$/.test(v); // จำนวนเต็มไม่ติดลบเท่านั้น
+
+            $('#submit-btn').on('click', function () {
+                const leftValue  = $('#left-operand').val().trim();
+                const rightValue = $('#right-operand').val().trim();
+                const operator   = $('#operator').val();
+
+                if (!isPosInt(leftValue) || !isPosInt(rightValue)) {
+                    alert("Error :(");
+                    return;
+                }
+
+                const leftNum  = parseInt(leftValue, 10);
+                const rightNum = parseInt(rightValue, 10);
+
+                if ((operator === '/' || operator === '%') && rightNum === 0) {
+                    alert("It’s over 9000!");
+                    console.log("It’s over 9000!");
+                    return;
+                }
+
+                let result;
+                switch (operator) {
+                    case '+': result = leftNum + rightNum; break;
+                    case '-': result = leftNum - rightNum; break;
+                    case '*': result = leftNum * rightNum; break;
+                    case '/': result = leftNum / rightNum; break;
+                    case '%': result = leftNum % rightNum; break;
+                }
+
+                alert(result);
+                console.log(result);
+            });
+        });
+    </script>
+</body>
+</html>

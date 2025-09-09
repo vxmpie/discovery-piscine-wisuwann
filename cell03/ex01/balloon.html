@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Balloon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{margin:0;height:100vh;display:flex;justify-content:center;align-items:center;background:#f3f4f6;font-family:system-ui,sans-serif}
+    #balloon{width:200px;height:200px;border-radius:50%;background:red;cursor:pointer;user-select:none;transition:background-color .15s}
+  </style>
+</head>
+<body>
+  <div id="balloon" title="Click me"></div>
+  <script>
+  (() => {
+    const balloon = document.getElementById('balloon');
+    const MIN=200, MAX=420, GROW=10, SHRINK=5;
+    const colors=['red','green','blue'];
+    let colorIndex=0, size=MIN;
+
+    function apply(){
+      balloon.style.width = size+'px';
+      balloon.style.height = size+'px';
+      balloon.style.backgroundColor = colors[colorIndex];
+    }
+    function nextFwd(){ colorIndex = (colorIndex + 1) % colors.length; }
+    function nextRev(){ colorIndex = (colorIndex - 1 + colors.length) % colors.length; }
+
+    balloon.addEventListener('click', () => {
+      size += GROW;
+      if (size > MAX) size = MIN;       
+      nextFwd();                        
+      apply();
+    });
+
+    balloon.addEventListener('mouseleave', () => {
+      size = Math.max(MIN, size - SHRINK);
+      nextRev();                        
+      apply();
+    });
+
+    apply();
+  })();
+  </script>
+</body>
+</html>
