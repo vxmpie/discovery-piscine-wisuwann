@@ -1,48 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>User profile card</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./card.css" />
-  </head>
-  <body>
-    <main class="wrap">
-      <article class="card">
-        <h2 class="title">User Profile</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div class="profile-card">
+        <h1>User Profile Card</h1>
+        <img src="https://i.pinimg.com/736x/45/4a/ce/454acea385b1f8d530b355abf287e642.jpg" alt="Profile Picture">
+        <h2>@wisuwann</h2>
+        <p>IoT Engineer, Thailand</p>
 
-        <table class="info" role="presentation" aria-hidden="true">
-          <tr>
-            <td class="photo">
-              <img class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300"
-                   alt="Profile picture">
-            </td>
-
-            <td class="details">
-              <div class="login">@wisuwann</div> 
-              <div class="desc">IoT engineer</div>
-
-              <div class="social">
-                <a href="#" aria-label="GitHub">
-                  <img class="icon" src="https://placehold.co/32x32?text=G" alt="">
-                </a>
-                <a href="#" aria-label="Twitter/X">
-                  <img class="icon" src="https://placehold.co/32x32?text=X" alt="">
-                </a>
-                <a href="#" aria-label="LinkedIn">
-                  <img class="icon" src="https://placehold.co/32x32?text=In" alt="">
-                </a>
-              </div>
-            </td>
-          </tr>
-        </table>
-
-        <div class="actions">
-          <a class="btn" href="mailto:you@example.com">Contact</a>
+        <div class="social-icons">
+            <a href="https://github.com/vxmpie" aria-label="GitHub">
+                <img class="logo" src="https://i.pinimg.com/736x/90/4c/d3/904cd34ec56f951830dff7319c98192e.jpg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/wiwat-suwannasit-a71418383" aria-label="LinkedIn">
+                <img class="logo" src="https://i.pinimg.com/736x/8a/15/b6/8a15b646a6856d20854c2ac22623d971.jpg" alt="">
+            </a>
         </div>
-      </article>
-    </main>
-  </body>
+
+        <button onclick="location.href='mailto:66010769@gmail.com'">Contact</button>
+    </div>
+</body>
 </html>
-
-
