@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areeya C. | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/img/icons/sun.png">
+    <meta name="description" content="The portfolio of Areeya Chanthanaphaiboon, showcasing skills in Data Analytics and Business Intelligence.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio1.css">
+</head>
+<body class="antialiased">
+
+    <header id="header" class="sticky-nav sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-[var(--sun-text)]">Home</a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="nav-link text-gray-700 hover:text-[var(--sun-gold)] transition">About</a></li>
+                <li><a href="#showcase" class="nav-link text-gray-700 hover:text-[var(--sun-gold)] transition">Showcase</a></li>
+                <li><a href="#contact" class="nav-link text-gray-700 hover:text-[var(--sun-gold)] transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24">
+        
+        <section id="about" class="min-h-screen flex items-center">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal-on-scroll-sun order-last md:order-first">
+                    <h1 class="text-4xl md:text-6xl font-bold text-[var(--sun-text)]">Areeya Chanthanaphaiboon</h1>
+                    <h2 class="text-2xl md:text-3xl mt-2 font-normal italic text-gray-600">Data Analytics & Statistics Student</h2>
+                    <p class="mt-6 text-lg text-gray-700 leading-loose">
+                        Currently studying Statistics at the Faculty of Science, King Mongkut's Institute of Technology Ladkrabang (KMITL). Passionate about Data Analytics and Business Intelligence, with a keen interest in transforming data into actionable insights. In my free time, I enjoy watching movies and listening to music.
+                    </p>
+                </div>
+                <div class="reveal-on-scroll-sun">
+                    <img src="assets/img/som.png" alt="Areeya Chanthanaphaiboon's Avatar" class="rounded-lg shadow-2xl shadow-yellow-900/10 w-full max-w-sm mx-auto" loading="lazy" width="640" height="640">
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase" class="py-20 space-y-24">
+            <h2 class="text-4xl font-bold text-center mb-12 reveal-on-scroll-sun">Showcase</h2>
+
+            <div class="reveal-on-scroll-sun">
+                <h3 class="text-3xl font-semibold text-center mb-8">Skills</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="skill-card p-6 text-center">
+                    <img src="assets/img/icons/terminal.png" alt="Programming Icon" class="w-10 h-10 mx-auto mb-2">
+                    <h4 class="text-xl font-semibold mb-3">Programming</h4>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+                    <div class="skill-card p-6 text-center">
+                        <img src="assets/img/icons/data.png" alt="Data Visualization Icon" class="w-10 h-10 mx-auto mb-2">
+                        <h4 class="text-xl font-semibold mb-3">Data Visualization</h4>
+                        <div class="flex justify-center gap-2 flex-wrap">
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Excel</span>
+                        </div>
+                    </div>
+                    <div class="skill-card p-6 text-center">
+                        <img src="assets/img/icons/light.png" alt="Other Skills Icon" class="w-10 h-10 mx-auto mb-2">
+                        <h4 class="text-xl font-semibold mb-3">Other Skills</h4>
+                        <div class="flex justify-center gap-2 flex-wrap">
+                            <span class="skill-tag">Teamwork</span>
+                            <span class="skill-tag">Work Under Pressure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-on-scroll-sun">
+                <h3 class="text-3xl font-semibold text-center mb-8">Projects & Experiences</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="skill-card p-6">
+                        <img src="assets/img/car.png" alt="Used Car Scraping Project" class="w-full rounded-md mb-4 shadow">
+                        <h4 class="text-xl font-semibold">Used Car Price Scraping</h4>
+                        <p class="text-sm text-[var(--sun-gold)] mb-3 font-medium">Python</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li>Analyzed pricing patterns based on brand, model, mileage, and year.</li>
+                            <li>Presented potential business applications for price comparison and market trend analysis.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card p-6">
+                        <img src="assets/img/samyan.jpg" alt="Stock Price Analysis Project" class="w-full rounded-md mb-4 shadow">
+                        <h4 class="text-xl font-semibold">Smart Community Project (Samyan)</h4>
+                        <p class="text-sm text-gray-600 mb-3">Research</p>
+                         <ul class="list-disc list-inside text-gray-600">
+                            <li>Researched applications of smart mobility and smart living.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card p-6">
+                        <img src="assets/img/ware.jpg" alt="Warehouse Optimization Project" class="w-full rounded-md mb-4 shadow">
+                        <h4 class="text-xl font-semibold">Warehouse Optimization</h4>
+                        <p class="text-sm text-gray-600 mb-3">Mathematical Optimization</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Solved mathematical optimization for space and profit utilization.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal-on-scroll-sun">
+                <h3 class="text-3xl font-semibold text-center mb-8">Achievements</h3>
+                <div class="skill-card p-6">
+                     <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Completed courses in Data Mining, Time Series, Business Analytics.</li>
+                        <li>Contributed to group assignments on predictive analytics and platform recommendation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    <section id="contact" class="py-20 text-center">
+        <h2 class="text-4xl font-bold mb-8 reveal-on-scroll-sun">Get In Touch</h2>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8 reveal-on-scroll-sun">
+            
+            <a href="mailto:ssomareeya@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link flex items-center gap-2">
+                <img src="assets/img/icons/gmail.png" alt="Gmail Icon" class="w-8 h-8">
+            </a>
+
+            <a href="https://www.instagram.com/ssomareeya/" target="_blank" rel="noopener noreferrer" class="social-link flex items-center gap-2">
+                <img src="assets/img/icons/instagram.png" alt="Instagram Logo" class="w-8 h-8">
+            </a>
+
+            <a href="tel:0939800297" class="social-link flex items-center gap-2">
+                <img src="assets/img/icons/tel.png" alt="Telephone Icon" class="w-8 h-8">
+            </a>
+
+        </div>
+    </section>
+
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

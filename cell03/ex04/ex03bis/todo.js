@@ -20,7 +20,6 @@ $(function(){
     prepend ? $list.prepend($div) : $list.append($div);
   }
 
-  // render from cookie (ล่าสุดอยู่บนสุด -> เก็บ array แบบล่าสุดก่อน)
   todos.forEach(t => addTodo(t));
 
   $('#new').on('click', function(){

@@ -1,0 +1,57 @@
+.reveal-on-scroll,
+.reveal-on-scroll-sun {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 280ms cubic-bezier(0.2, 0.8, 0.2, 1), transform 280ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-on-scroll-sun {
+    filter: brightness(0.9) saturate(0.8);
+    transition: opacity 280ms ease-out, transform 280ms ease-out, filter 400ms ease-out;
+}
+
+.reveal-on-scroll-sun.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    filter: brightness(1) saturate(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 1ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .reveal-on-scroll,
+    .reveal-on-scroll-sun {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+}
+
+a:focus, button:focus {
+    outline: 2px solid #3B82F6;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.text-shadow-md {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    background-color: #333; 
+}
+img[src$=".jpg"], img[src$=".png"] {
+    background-color: transparent;
+}

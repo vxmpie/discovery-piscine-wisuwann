@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiwat S. | Portfolio</title>
+    <link rel="preload" as="image" href="assets/img/bg-luna-2.jpg">
+    <link rel="preload" as="image" href="assets/img/bg-luna-3.jpg">
+    <link rel="preload" as="image" href="assets/img/bg-luna-4.jpg">
+    <link rel="preload" as="image" href="assets/img/bg-luna-5.jpg">
+    <link rel="preload" as="image" href="assets/img/bg-luna-6.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="assets/img/icons/lunar.png">
+    <meta name="description" content="The modern, sleek, and elegant portfolio of wisuwann.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio2.css">
+</head>
+<body class="antialiased">
+
+    <header id="header" class="sticky-nav sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-white">Home</a>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="nav-link text-gray-300 hover:text-white transition">About</a></li>
+                <li><a href="#skills" class="nav-link text-gray-300 hover:text-white transition">Skills</a></li>
+                <li><a href="#showcase" class="nav-link text-gray-300 hover:text-white transition">Showcase</a></li>
+                <li><a href="#contact" class="nav-link text-gray-300 hover:text-white transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="w-full">
+    <section id="about" class="relative min-h-screen flex flex-col px-6 md:px-16 py-16">
+    <div class="flex-grow flex items-center">
+        <div class="grid md:grid-cols-2 gap-12 items-center w-full">
+    <div class="reveal-on-scroll max-w-xl mx-auto">
+    <img src="assets/img/myface.jpg"
+        class="rounded-lg shadow-2xl shadow-black/50 w-full"
+        loading="lazy" width="640" height="640">
+    </div>
+        <div class="reveal-on-scroll text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold text-[var(--luna-accent)]">Wiwat Suwannasit</h1>
+            <h2 class="text-2xl md:text-3xl mt-2 font-light">Cybersecurity Enthusiast & IoT Engineering Student</h2>
+            <p class="mt-6 text-lg text-gray-300 leading-relaxed">
+                Motivated dual-degree Engineering student in IoT and Industrial Physics, passionate about cybersecurity. Proven problem-solving skills as a hackathon finalist, eager to contribute in an entry-level cybersecurity role.
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center w-full about-content"></div>
+
+    <div class="bg-switcher-controls flex justify-center gap-4 mt-12 z-10">
+        <button class="bg-switcher" data-bg="assets/img/bg-luna-2.jpg" aria-label="Set Luna Background"></button>
+        <button class="bg-switcher" data-bg="assets/img/bg-luna-3.jpg" aria-label="Set Luna Background"></button>
+        <button class="bg-switcher" data-bg="assets/img/bg-luna-4.jpg" aria-label="Set Luna Background"></button>
+        <button class="bg-switcher" data-bg="assets/img/bg-luna-5.jpg" aria-label="Set Luna Background"></button>
+        <button class="bg-switcher" data-bg="assets/img/bg-luna-6.jpg" aria-label="Set Luna Background"></button>
+    </div>
+    </section>
+
+<section id="skills" class="py-20 px-6 md:px-16">
+    <h2 class="text-4xl font-bold text-center mb-12 reveal-on-scroll">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/python.png" alt="Python Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">Python</h3>
+                <p class="mt-2 text-sm text-gray-400">Data analysis, web scraping, and backend development.</p>
+            </div>
+        </div>
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/c.png" alt="C Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">C</h3>
+                <p class="mt-2 text-sm text-gray-400">Low-level programming and system understanding.</p>
+            </div>
+        </div>
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/cplus.png" alt="C++ Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">C++</h3>
+                <p class="mt-2 text-sm text-gray-400">Competitive programming and performance-critical applications.</p>
+            </div>
+        </div>
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+             <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/kali.png" alt="Kali Linux Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">Kali Linux</h3>
+                <p class="mt-2 text-sm text-gray-400">Cybersecurity tools and penetration testing.</p>
+            </div>
+        </div>
+        
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/html5.png" alt="HTML5 Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">HTML5</h3>
+                <p class="mt-2 text-sm text-gray-400">Structuring web content effectively.</p>
+            </div>
+        </div>
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/css3.png" alt="CSS3 Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">CSS3</h3>
+                <p class="mt-2 text-sm text-gray-400">Styling and responsive design.</p>
+            </div>
+        </div>
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/java.png" alt="JavaScript Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">JavaScript</h3>
+                <p class="mt-2 text-sm text-gray-400">Dynamic web content and interactivity.</p>
+            </div>
+        </div>
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/tail.png" alt="Tailwind CSS Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">Tailwind CSS</h3>
+                <p class="mt-2 text-sm text-gray-400">Utility-first CSS framework for rapid UI development.</p>
+            </div>
+        </div>
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/type.png" alt="TypeScript Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">TypeScript</h3>
+                <p class="mt-2 text-sm text-gray-400">Strongly typed superset of JavaScript for scalable apps.</p>
+            </div>
+        </div>
+
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/sql.png" alt="SQL Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">SQL</h3>
+                <p class="mt-2 text-sm text-gray-400">Query and manage relational databases.</p>
+            </div>
+        </div>
+
+        
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/react.png" alt="React.js Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">React.js</h3>
+                <p class="mt-2 text-sm text-gray-400">
+                Powerful JavaScript library for building user interfaces and dynamic web apps.</p>            
+            </div>
+        </div>
+     
+        <div class="skill-card p-6 rounded-lg reveal-on-scroll">
+            <div class="flex flex-col items-center text-center">
+                <img src="assets/img/icons/github.png" alt="GitHub Logo" class="skill-logo">
+                <h3 class="mt-4 text-xl font-semibold text-[var(--luna-accent)]">GitHub</h3>
+                <p class="mt-2 text-sm text-gray-400">
+                Code hosting platform for version control, collaboration, and open-source development.</p>
+            </div>
+        </div>
+</section>
+
+    <section id="showcase" class="py-20 px-6 md:px-16">
+        <h2 class="text-4xl font-bold text-center mb-12 reveal-on-scroll">Showcase</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="project-card reveal-on-scroll lg:col-span-2">
+                
+                <div class="flex flex-col sm:flex-row">
+                    <img src="assets/img/certificate/find.jpeg" alt="Salary Website - Find Employee" class="w-full sm:w-1/2 object-cover aspect-[3.55/3]">
+                    <img src="assets/img/certificate/input.jpeg" alt="Salary Website - Input Data" class="w-full sm:w-1/2 object-cover aspect-[4/3]">
+                </div>
+
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-[var(--luna-accent)]">Salary Website Development</h3>
+                    <p class="mt-2 text-gray-400">A web development project for branch managers to manage payroll, and for store employees to view their individual monthly income.</p>
+                </div>
+
+            </div>
+
+
+            <div class="project-card reveal-on-scroll">
+                <img src="assets/img/certificate/web3.jpeg" class="project-image">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-[var(--luna-accent)]">Debt Collection System Website</h3>
+                    <p class="mt-2 text-gray-400">A debt collection system website using Google Scripts to manage branch student payments within the department.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal-on-scroll">
+                <img src="assets/img/certificate/toon1.jpg" class="project-image">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-[var(--luna-accent)]">Axtra Mile Hackathon</h3>
+                    <p class="mt-2 text-gray-400">Selected as one of the top 15 finalist teams in the competition.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal-on-scroll">
+                <img src="assets/img/certificate/toon2.jpg" class="project-image">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-[var(--luna-accent)]">True CyberSafe</h3>
+                    <p class="mt-2 text-gray-400">Selected as one of the top 15 finalist teams in the competition.</p>
+                </div>
+            </div>
+
+            <div class="project-card reveal-on-scroll">
+                <img src="assets/img/certificate/web2.png" class="project-image">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-[var(--luna-accent)]">Portfolio Website</h3>
+                    <p class="mt-2 text-gray-400">A dual-style personal portfolio website with interactive themes — Sun & Moon — representing two unique personas. Designed with custom CSS, animations, and smooth user experience.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 text-center px-6 md:px-16">
+        <h2 class="text-4xl font-bold mb-8 reveal-on-scroll">Connect with Me</h2>
+        <p class="max-w-xl mx-auto mb-10 text-gray-400 reveal-on-scroll">
+            Feel free to reach out. I'm always open to new opportunities and collaborations.
+        </p>
+        <div class="flex justify-center space-x-8 reveal-on-scroll">
+
+            <a href="https://github.com/vxmpie" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                <img src="assets/img/icons/github.png" alt="GitHub Logo" class="skill-logo">
+            </a>
+
+            <a href="https://www.linkedin.com/in/wiwat-suwannasit/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                <img src="assets/img/icons/linkedin.png" alt="LinkedIn Logo" class="skill-logo">
+            </a>
+
+            <a href="https://www.instagram.com/3abyloonney.toon/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                <img src="assets/img/icons/instagram.png" alt="Instagram Logo" class="skill-logo">
+            </a>
+
+            <a href="mailto:suwannasit.work@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Email">
+                <img src="assets/img/icons/gmail.png" alt="Email Logo" class="skill-logo">
+            </a>
+            
+        </div>
+    </section>
+
+</main>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
