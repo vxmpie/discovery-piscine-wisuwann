@@ -47,6 +47,7 @@ rush/
 │   │   └── style.css
 │   ├── img/
 │   │   └── icons/
+│   │   └── certificates/
 │   ├── js/
 │   │   ├── app.js
 │   │   └── index.js
@@ -74,7 +75,3 @@ rush/
 
 * **Wiwat Suwannasit** (`wisuwann`)
 * **Areeya Chanthanaphaiboon** (`archanth`)
-
----
-
-ขอบคุณที่ให้ผมได้เป็นส่วนหนึ่งในการสร้างสรรค์ผลงานชิ้นนี้
